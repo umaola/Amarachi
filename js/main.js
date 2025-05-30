@@ -364,23 +364,6 @@ $(function () {
         };
     }
 
-    /***************************
-
-    contact form
-
-    ***************************/
-    function sendEmail() {
-        const templateParams = {
-            name: document.querySelector("#name").value,
-            email: document.querySelector("#email").value,
-            message: document.querySelector("#message").value,
-        };
-
-        emailjs
-        .send("service_4jjl12d","template_sr33toc", templateParams)
-        .then(() => alert("Email sent!").catch(() => alert("Error sending")));
-    }
-
     /*----------------------------------------------------------
     ------------------------------------------------------------
 
